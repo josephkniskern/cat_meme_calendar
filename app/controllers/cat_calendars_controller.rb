@@ -1,0 +1,2 @@
+class CatCalendarsController < ApplicationController
+end
