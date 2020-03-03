@@ -1,0 +1,4 @@
+<%= form_for @cat do |f| %>
+<%= f.collection_select :id, Cat.all, :id, :id %> 
+<%= f.submit "Pick-a-Cat" %>
+<% end %>

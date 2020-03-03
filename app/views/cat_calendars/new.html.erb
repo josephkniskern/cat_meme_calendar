@@ -1,0 +1,10 @@
+<h1> CatCalendar New Page </h1>
+<body>
+
+
+<% Cat.all.each do |cat| %>
+  <div><%= image_tag(cat.img_url, class: "cat_pic") %></div>
+  <%= button_to cat.id, cat_calendars_path, method: :post, params: {cat_id: cat.id} %>
+  <%= cat.id %>
+<% end %>
+</body>

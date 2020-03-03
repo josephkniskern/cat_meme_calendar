@@ -31,8 +31,8 @@ calendar1 = Calendar.create(title: "My first Calendar")
 calendar2 = Calendar.create(title: "My second Calendar")
 calendar3 = Calendar.create(title: "My third Calendar")
 
-cat_calendar1 = CatCalendar.create(month: "Janurary", cat_id: Cat.all.sample.id, calendar_id: Calendar.all.sample.id)
-cat_calendar2 = CatCalendar.create(month: "February", cat_id: Cat.all.sample.id, calendar_id: Calendar.all.sample.id)
-cat_calendar3 = CatCalendar.create(month: "March", cat_id: Cat.all.sample.id, calendar_id: Calendar.all.sample.id)
+cat_calendar1 = CatCalendar.create(month: "Janurary", img_url: "https://blankcalendarpages.com/printable_calendar/blank-18/January-2020-calendar-b18.jpg", cat_id: Cat.all.sample.id, calendar_id: Calendar.all.sample.id)
+cat_calendar2 = CatCalendar.create(month: "February", img_url: "https://blankcalendarpages.com/printable_calendar/blank-18/February-2020-calendar-b18.jpg",cat_id: Cat.all.sample.id, calendar_id: Calendar.all.sample.id)
+cat_calendar3 = CatCalendar.create(month: "March", img_url: "https://blankcalendarpages.com/printable_calendar/blank-18/March-2020-calendar-b18.jpg ", cat_id: Cat.all.sample.id, calendar_id: Calendar.all.sample.id)
 
 user1 = User.create(name: "Thomas Jefferson", calendar_id: Calendar.all.sample.id)

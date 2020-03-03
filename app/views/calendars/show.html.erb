@@ -1,0 +1,6 @@
+<h1> Calendar Show Page </h1>
+
+<% CatCalendar.all.each do |cat_calendar| %>
+<%= button_to cat_calendar.month, new_cat_calendar_path, method: :get, params: {calendar_id: cat_calendar.calendar_id} %>
+<%= image_tag(cat_calendar.img_url, class: "calendar_pic") %>
+<% end %> 

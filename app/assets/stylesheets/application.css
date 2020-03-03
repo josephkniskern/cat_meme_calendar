@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+
+ .cat_pic {
+   height: 150px;
+   
+ }
+
+ .calendar_pic {
+   height: 100px;
+   width: 100px
+ }
+
+ div {
+  background-color: rgba(76%, 10%, 28%, 85%);
+}
+
+body {
+  background: conic-gradient(at 34% -27%, #D27979, #9679D2);
+}
