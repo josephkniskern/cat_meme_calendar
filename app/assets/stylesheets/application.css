@@ -20,14 +20,17 @@
    
  }
 
- .calendar_pic {
-   height: 100px;
-   width: 100px
+ .cat-month-pic {
+   height: 200px;
+   width: 200px
  }
 
- div {
-  background-color: rgba(76%, 10%, 28%, 85%);
-}
+ .calendar_pic {
+   height: 200px;
+   width: 200px
+ }
+
+
 
 body {
   background: conic-gradient(at 34% -27%, #D27979, #9679D2);

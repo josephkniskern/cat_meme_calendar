@@ -1,0 +1,8 @@
+<h1> Edit You Cat Calendar!!!!!!!!!!!!!!!!!!!!!!!!!!!! </h1>
+
+
+  <% Cat.all.each do |cat| %>
+  <%= image_tag(cat.img_url, class: "cat_pic") %>
+  <%= button_to cat.id, cat_calendar_path(@cat_calendar.id), method: :patch, params: {cat_id: cat.id} %>
+  <%= cat.id %>
+<% end %>

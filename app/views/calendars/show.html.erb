@@ -1,6 +1,62 @@
 <h1> Calendar Show Page </h1>
 
-<% CatCalendar.all.each do |cat_calendar| %>
-<%= button_to cat_calendar.month, new_cat_calendar_path, method: :get, params: {calendar_id: cat_calendar.calendar_id} %>
-<%= image_tag(cat_calendar.img_url, class: "calendar_pic") %>
-<% end %> 
+<% @cat_month = CatCalendar.find_by(month: "January", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "January", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "January"}) : (button_to "January", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "January"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/January-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+<% @cat_month = CatCalendar.find_by(month: "February", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "February", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "February"}) : (button_to "February", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "February"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/February-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+<% @cat_month = CatCalendar.find_by(month: "March", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "March", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "March"}) : (button_to "March", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "March"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/March-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+
+<% @cat_month = CatCalendar.find_by(month: "April", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "April", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "April"}) : (button_to "April", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "April"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/April-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+<% @cat_month = CatCalendar.find_by(month: "May", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "May", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "May"}) : (button_to "May", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "May"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/May-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+<% @cat_month = CatCalendar.find_by(month: "June", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "June", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "June"}) : (button_to "June", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "June"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/June-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+<% @cat_month = CatCalendar.find_by(month: "July", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "July", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "July"}) : (button_to "July", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "July"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/July-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+<% @cat_month = CatCalendar.find_by(month: "August", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "August", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "August"}) : (button_to "August", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "August"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/August-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+<% @cat_month = CatCalendar.find_by(month: "September", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "September", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "September"}) : (button_to "September", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "September"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/September-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+<% @cat_month = CatCalendar.find_by(month: "October", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "October", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "October"}) : (button_to "October", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "October"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/October-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+<% @cat_month = CatCalendar.find_by(month: "November", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "November", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "November"}) : (button_to "November", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "November"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/November-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>
+
+<% @cat_month = CatCalendar.find_by(month: "December", calendar_id: @calendar.id) %>
+<%= @cat_month ? (button_to "December", edit_cat_calendar_path(@cat_month), method: :get, params: {calendar_id: @calendar.id, month: "December"}) : (button_to "December", new_cat_calendar_path, method: :get, params: {calendar_id: @calendar.id, month: "December"}) %>
+<%= image_tag("https://blankcalendarpages.com/printable_calendar/blank-18/December-2020-calendar-b18.jpg", class: "calendar_pic") %>
+<%= image_tag(@cat_month.cat.img_url, class: "cat-month-pic") if @cat_month %>

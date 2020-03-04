@@ -1,13 +1,4 @@
-<h1> CatCalendar Show Page </h1>
-<body>
-<%= button_to cat.img_url, cat_path, method: :get, params: {cat_id: cat_id} %>
 
-<% Cat.all.each do |cat| %>
-  <div><%= image_tag(cat.img_url, class: "cat_pic") %></div>
-
-  <%= cat.id %>
-<% end %>
-</body>
 
 
 
