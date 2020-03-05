@@ -35,3 +35,17 @@
 body {
   background: conic-gradient(at 34% -27%, #D27979, #9679D2);
 }
+
+.name_calendar {
+  display: flex;
+  justify-content: center;
+  font-family: fantasy;
+  font-size: 100px;
+  text-align: center;
+
+}
+
+.submit {
+display: flex; 
+justify-content: center;
+}

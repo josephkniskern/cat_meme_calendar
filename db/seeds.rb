@@ -9,7 +9,7 @@
 Cat.destroy_all
 CatCalendar.destroy_all
 Calendar.destroy_all
-User.destroy_all
+
 
 cat1 = Cat.create(img_url: "https://i.imgflip.com/20fhys.jpg")
 cat2 = Cat.create(img_url: "http://www.quickmeme.com/img/29/2944cac4d88402f4ea0dfcb88ee2bca2767bb55bb17508b2ea6a877767923545.jpg")
@@ -35,4 +35,3 @@ cat_calendar1 = CatCalendar.create(month: "January", img_url: "https://blankcale
 cat_calendar2 = CatCalendar.create(month: "February", img_url: "https://blankcalendarpages.com/printable_calendar/blank-18/February-2020-calendar-b18.jpg",cat_id: Cat.all.sample.id, calendar_id: Calendar.all.sample.id)
 cat_calendar3 = CatCalendar.create(month: "March", img_url: "https://blankcalendarpages.com/printable_calendar/blank-18/March-2020-calendar-b18.jpg ", cat_id: Cat.all.sample.id, calendar_id: Calendar.all.sample.id)
 
-user1 = User.create(name: "Thomas Jefferson", calendar_id: Calendar.all.sample.id)
