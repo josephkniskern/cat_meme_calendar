@@ -31,9 +31,9 @@ class CatCalendarsController < ApplicationController
     redirect_to calendar_path(@cat_calendar.calendar_id)
   end
 
-  def show 
-    @cat_calendar = CatCalendar.find(params[:id])
-  end
+  # def show 
+  #   @cat_calendar = CatCalendar.find(params[:id])
+  # end
 
   def edit 
     @cat_calendar = CatCalendar.find(params[:id])
